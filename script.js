@@ -27,9 +27,7 @@ const content = {
         ['Rare major/minor families', 'Harmonic major, double harmonic major, Hungarian minor, Ukrainian Dorian, Neapolitan major, Neapolitan minor.'],
         ['Westernised Eastern colours', 'Persian, Arabic, Spanish Phrygian, Oriental, Egyptian.'],
         ['Japanese scales', 'Hirajoshi, Insen, Iwato, Yo, Kumoi.']
-      ],
-      aliases: 'The two octatonic scales also accept the compatibility aliases <code>DiminishedWholeHalf</code> and <code>DiminishedHalfWhole</code>; these are not additional scales.',
-      api: '<code>ModeCatalog.Standard.AllWithPentatonicAndExoticScales</code> contains the 48 recognition candidates: 21 principal modes, 2 pentatonic scales and 25 exotic scales. The direct <code>Major</code>, <code>NaturalMinor</code>, <code>HarmonicMinor</code> and <code>MelodicMinorAscending</code> definitions remain constructible alongside their corresponding mode 1 definitions, without duplicating the recognition catalogue. Exotic definitions are centralised in <code>ExoticScales</code>.'
+      ]
     },
     steps: [['Choose a key', 'Start with the circle, a scale or a handful of notes.'], ['Hear the possibilities', 'Move through chords, notes and colours.'], ['Keep what sounds right', 'Save, sequence and play your discoveries.']],
     features: [
@@ -70,9 +68,7 @@ const content = {
         ['Familles majeure/mineure rares', 'Majeure harmonique, double harmonique majeure, mineure hongroise, dorienne ukrainienne, napolitaine majeure, napolitaine mineure.'],
         ['Couleurs orientales occidentalisées', 'Persane, arabe, phrygienne espagnole, orientale, égyptienne.'],
         ['Japonaises', 'Hirajoshi, Insen, Iwato, Yo, Kumoi.']
-      ],
-      aliases: 'Les deux octatoniques acceptent aussi les alias de compatibilité <code>DiminishedWholeHalf</code> et <code>DiminishedHalfWhole</code> : ce ne sont pas des gammes additionnelles.',
-      api: '<code>ModeCatalog.Standard.AllWithPentatonicAndExoticScales</code> contient les 48 candidates de reconnaissance : 21 modes principaux, 2 pentatoniques et 25 exotiques. Les définitions directes <code>Major</code>, <code>NaturalMinor</code>, <code>HarmonicMinor</code> et <code>MelodicMinorAscending</code> restent constructibles, parallèles à leurs définitions de mode 1 correspondantes, sans doubler le catalogue de reconnaissance. Les définitions exotiques sont centralisées dans <code>ExoticScales</code>.'
+      ]
     },
     steps: [['Choisissez une tonalité', 'Partez du cercle, d’une gamme ou de quelques notes.'], ['Écoutez les possibilités', 'Faites défiler les accords, les notes et les couleurs.'], ['Gardez ce qui sonne juste', 'Mémorisez, enchaînez et jouez vos trouvailles.']],
     features: [
@@ -95,7 +91,7 @@ const content = {
 
 let revealObserver;
 const imagePath = (file) => `ScreenShots/${file}`;
-const scaleSupportMarkup = (scaleSupport) => `<section class="scale-support section-shell reveal" aria-label="${scaleSupport.eyebrow}"><div class="scale-support-intro"><p class="eyebrow">${scaleSupport.eyebrow}</p><h3>${scaleSupport.heading}</h3><p>${scaleSupport.intro}</p><dl class="scale-stats">${scaleSupport.stats.map(([number, label]) => `<div><dt>${number}</dt><dd>${label}</dd></div>`).join('')}</dl></div><div class="scale-support-content"><div class="scale-groups">${scaleSupport.groups.map(([name, scales]) => `<article><h4>${name}</h4><p>${scales}</p></article>`).join('')}</div><p class="scale-note">${scaleSupport.aliases}</p><p class="scale-api"><strong>API</strong>${scaleSupport.api}</p></div></section>`;
+const scaleSupportMarkup = (scaleSupport) => `<section class="scale-support section-shell reveal" aria-label="${scaleSupport.eyebrow}"><div class="scale-support-intro"><p class="eyebrow">${scaleSupport.eyebrow}</p><h3>${scaleSupport.heading}</h3><p>${scaleSupport.intro}</p><dl class="scale-stats">${scaleSupport.stats.map(([number, label]) => `<div><dt>${number}</dt><dd>${label}</dd></div>`).join('')}</dl></div><div class="scale-support-content"><div class="scale-groups">${scaleSupport.groups.map(([name, scales]) => `<article><h4>${name}</h4><p>${scales}</p></article>`).join('')}</div></div></section>`;
 const featureMarkup = (feature, index, midiExport) => {
   const [eyebrow, heading, description, alt, caption] = feature;
   const image = imagePath(screenshots[index + 1]);

@@ -66,10 +66,6 @@ h1 em,h2 em { color:var(--teal); font-style:italic; }
 .scale-groups article { min-height:126px; padding:19px 20px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
 .scale-groups h4 { margin:0 0 10px; color:var(--teal); font-size:12px; line-height:1.2; letter-spacing:.02em; }
 .scale-groups p { margin:0; color:var(--muted); font-size:13px; line-height:1.5; }
-.scale-note,.scale-api { margin:16px 0 0; padding:15px 17px; color:var(--muted); border-left:2px solid var(--teal); background:rgba(100,200,191,.06); font-size:13px; }
-.scale-api { border-left-color:var(--amber); }
-.scale-api strong { display:block; margin-bottom:6px; color:var(--amber); font-size:10px; letter-spacing:.14em; }
-code { padding:1px 4px; color:var(--text); background:rgba(255,255,255,.08); font:11px ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap:anywhere; }
 .screenshot { width:100%; cursor:zoom-in; padding:0; color:inherit; text-align:left; transition:transform .28s; }
 .screenshot:hover { transform:translateY(-8px); }
 .feature-reverse { grid-template-columns:74px minmax(380px,1.3fr) minmax(260px,.7fr); }

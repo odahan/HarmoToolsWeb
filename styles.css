@@ -30,7 +30,7 @@ h1 em,h2 em { color:var(--teal); font-style:italic; }
 .hero-donation { min-height:48px; }
 .hero-donation .bmc-btn { height:48px; min-width:0; padding-inline:18px; border-radius:0; }
 .hero-donation .bmc-btn svg { height:27px!important; }
-.hero-donation-note { max-width:500px; margin:16px 0 -38px; color:var(--muted); font-size:13px; }
+.hero-donation-note { max-width:510px; margin:16px 0 -38px; padding:10px 13px; color:var(--text); border-left:2px solid var(--amber); background:rgba(231,122,45,.08); font-size:13px; line-height:1.45; }
 .button { display:inline-block; padding:14px 20px; font-size:14px; font-weight:750; transition:transform .2s, background .2s; }
 .button:hover { transform:translateY(-3px); }
 .button-primary { color:#17130e; background:var(--amber); }

@@ -7,9 +7,9 @@ const screenshots = [
 const content = {
   en: {
     title: 'OD HarmoTools — Harmony in motion', description: 'OD HarmoTools — a practical workspace for exploring musical harmony.',
-    nav: ['Tools', 'The flow', 'Explore the app'], heroEyebrow: 'The workspace for curious musicians', hero: 'Harmony<br><em>in motion.</em>', heroText: 'OD HarmoTools makes scales, chords and keys immediately playable, visible and connected.', primary: 'Discover the tools', secondary: 'See the flow', facts: [['For', 'Musicians & composers'], ['With', 'Audio, keyboard & MIDI']], heroCaption: 'From scale to chord, everything becomes tangible.',
+    nav: ['Tools', 'The flow', 'Download'], heroEyebrow: 'The workspace for curious musicians', hero: 'Harmony<br><em>in motion.</em>', heroText: 'OD HarmoTools makes scales, chords and keys immediately playable, visible and connected.', primary: 'Discover the tools', download: 'Download OD HarmoTools', secondary: 'See the flow', donationNote: 'Free to use. DonationWare means that a voluntary donation helps keep its development moving.', facts: [['For', 'Musicians & composers'], ['With', 'Audio, keyboard & MIDI'], ['Model', 'Free DonationWare']], heroCaption: 'From scale to chord, everything becomes tangible.',
     manifestoEyebrow: 'One tool, one instinct', manifesto: 'Less theory to look up.<br><em>More music to imagine.</em>', manifestoText: 'HarmoTools brings the essential landmarks of harmony into a calm, precise and unmistakably musical interface.', toolsEyebrow: 'Fourteen gestures, one musical thread', tools: 'Explore. Understand.<br><em>Make it sound.</em>',
-    journeyEyebrow: 'A natural flow', journey: 'From curiosity<br>to progression.', closingEyebrow: 'OD HarmoTools', closing: 'A little less<br>uncertainty. <em>A lot more harmony.</em>', closingText: 'A toolbox designed to keep your ear at the centre of every decision.', top: 'Back to the top', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Close',
+    journeyEyebrow: 'A natural flow', journey: 'From curiosity<br>to progression.', supportEyebrow: 'Download & support', support: 'Make music.<br><em>Keep it moving.</em>', supportText: 'OD HarmoTools is DonationWare: free to use, and sustained by donations from the people who find it useful.', download: 'Download OD HarmoTools', donateTitle: 'Enjoying HarmoTools?', donateText: 'If it helps your musical practice, you can support its development with a coffee.', donateLabel: 'Support OD HarmoTools on Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'A little less<br>uncertainty. <em>A lot more harmony.</em>', closingText: 'A toolbox designed to keep your ear at the centre of every decision.', top: 'Back to the top', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Close',
     midiExport: ['MIDI export', 'Import the progression into your DAW.', 'Each chord memory now has its own MIDI export button. Save the progression as a Standard MIDI File (format 0), then simply drag and drop it into your DAW to continue working with it there.', 'A chord progression exported from OD HarmoTools and imported into a DAW', 'Drag and drop the exported MIDI file into your DAW.'],
     steps: [['Choose a key', 'Start with the circle, a scale or a handful of notes.'], ['Hear the possibilities', 'Move through chords, notes and colours.'], ['Keep what sounds right', 'Save, sequence and play your discoveries.']],
     features: [
@@ -30,9 +30,9 @@ const content = {
   },
   fr: {
     title: 'OD HarmoTools — L’harmonie en mouvement', description: 'OD HarmoTools — un espace de travail pratique pour explorer l’harmonie musicale.',
-    nav: ['Les outils', 'Le parcours', "Explorer l’app"], heroEyebrow: 'L’espace de travail des musiciens curieux', hero: 'L’harmonie<br><em>en mouvement.</em>', heroText: 'OD HarmoTools rend les gammes, les accords et les tonalités immédiatement jouables, visibles et reliés entre eux.', primary: 'Découvrir les outils', secondary: 'Voir le parcours', facts: [['Pour', 'Musiciens & compositeurs'], ['Avec', 'Audio, clavier & MIDI']], heroCaption: 'De la gamme à l’accord, tout devient tangible.',
+    nav: ['Les outils', 'Le parcours', 'Télécharger'], heroEyebrow: 'L’espace de travail des musiciens curieux', hero: 'L’harmonie<br><em>en mouvement.</em>', heroText: 'OD HarmoTools rend les gammes, les accords et les tonalités immédiatement jouables, visibles et reliés entre eux.', primary: 'Découvrir les outils', download: 'Télécharger OD HarmoTools', secondary: 'Voir le parcours', donationNote: 'Utilisation gratuite. DonationWare signifie qu’un don libre aide à faire vivre son développement.', facts: [['Pour', 'Musiciens & compositeurs'], ['Avec', 'Audio, clavier & MIDI'], ['Modèle', 'DonationWare gratuit']], heroCaption: 'De la gamme à l’accord, tout devient tangible.',
     manifestoEyebrow: 'Un outil, un réflexe', manifesto: 'Moins de théorie à chercher.<br><em>Plus de musique à imaginer.</em>', manifestoText: 'HarmoTools rassemble les repères essentiels de l’harmonie dans une interface calme, précise et résolument musicale.', toolsEyebrow: 'Quatorze gestes, un même fil musical', tools: 'Explorer. Comprendre.<br><em>Faire sonner.</em>',
-    journeyEyebrow: 'Un parcours naturel', journey: 'De la curiosité<br>à la progression.', closingEyebrow: 'OD HarmoTools', closing: 'Un peu moins<br>de doute. <em>Beaucoup plus d’harmonie.</em>', closingText: 'Une boîte à outils pensée pour garder l’oreille au centre de chaque décision.', top: 'Revenir au début', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Fermer',
+    journeyEyebrow: 'Un parcours naturel', journey: 'De la curiosité<br>à la progression.', supportEyebrow: 'Télécharger & soutenir', support: 'Faites de la musique.<br><em>Faites-la vivre.</em>', supportText: 'OD HarmoTools est un logiciel DonationWare : son utilisation est gratuite et son développement est soutenu par les dons de celles et ceux qui l’apprécient.', download: 'Télécharger OD HarmoTools', donateTitle: 'HarmoTools vous est utile ?', donateText: 'Si l’application accompagne votre pratique musicale, vous pouvez soutenir son développement avec un café.', donateLabel: 'Soutenir OD HarmoTools sur Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'Un peu moins<br>de doute. <em>Beaucoup plus d’harmonie.</em>', closingText: 'Une boîte à outils pensée pour garder l’oreille au centre de chaque décision.', top: 'Revenir au début', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Fermer',
     midiExport: ['Export MIDI', 'Importez la progression dans votre DAW.', 'Chaque mémoire d’accord dispose désormais de son propre bouton d’export MIDI. Enregistrez la progression au format MIDI standard 0, puis glissez-déposez simplement le fichier dans votre DAW pour poursuivre le travail.', 'Une progression d’accords exportée depuis OD HarmoTools et importée dans un DAW', 'Glissez-déposez le fichier MIDI exporté dans votre DAW.'],
     steps: [['Choisissez une tonalité', 'Partez du cercle, d’une gamme ou de quelques notes.'], ['Écoutez les possibilités', 'Faites défiler les accords, les notes et les couleurs.'], ['Gardez ce qui sonne juste', 'Mémorisez, enchaînez et jouez vos trouvailles.']],
     features: [
@@ -72,12 +72,13 @@ function render(language) {
   document.documentElement.lang = language;
   document.title = t.title;
   document.querySelector('meta[name="description"]').content = t.description;
-  document.querySelector('#navigation').innerHTML = `<a href="#tools">${t.nav[0]}</a><a href="#journey">${t.nav[1]}</a><a class="nav-cta" href="#start">${t.nav[2]}</a>`;
+  document.querySelector('#navigation').innerHTML = `<a href="#tools">${t.nav[0]}</a><a href="#journey">${t.nav[1]}</a><a class="nav-cta" href="#support">${t.nav[2]}</a>`;
   document.querySelector('#site-content').innerHTML = `
-    <section class="hero section-shell"><div class="hero-copy reveal"><p class="eyebrow">${t.heroEyebrow}</p><h1>${t.hero}</h1><p class="hero-text">${t.heroText}</p><div class="hero-actions"><a class="button button-primary" href="#tools">${t.primary}</a><a class="text-link" href="#journey">${t.secondary}</a></div><dl class="hero-facts">${t.facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl></div><figure class="hero-visual reveal image-frame"><img src="${imagePath(screenshots[0])}" alt="${t.features[0][3]}"><figcaption>${t.heroCaption}</figcaption></figure></section>
+    <section class="hero section-shell"><div class="hero-copy reveal"><p class="eyebrow">${t.heroEyebrow}</p><h1>${t.hero}</h1><p class="hero-text">${t.heroText}</p><div class="hero-actions"><a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0" target="_blank" rel="noopener noreferrer">${t.download}</a><div class="coffee-button-holder hero-donation" data-bmc-button aria-label="${t.donateLabel}"></div><a class="text-link" href="#tools">${t.primary}</a><a class="text-link" href="#journey">${t.secondary}</a></div><p class="hero-donation-note">${t.donationNote}</p><dl class="hero-facts">${t.facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl></div><figure class="hero-visual reveal image-frame"><img src="${imagePath(screenshots[0])}" alt="${t.features[0][3]}"><figcaption>${t.heroCaption}</figcaption></figure></section>
     <section class="manifesto section-shell reveal"><p class="eyebrow">${t.manifestoEyebrow}</p><h2>${t.manifesto}</h2><p>${t.manifestoText}</p></section>
     <section class="tools" id="tools"><div class="section-shell section-intro reveal"><p class="eyebrow">${t.toolsEyebrow}</p><h2>${t.tools}</h2></div>${t.features.map((feature, index) => featureMarkup(feature, index, t.midiExport)).join('')}</section>
     <section class="journey section-shell reveal" id="journey"><p class="eyebrow">${t.journeyEyebrow}</p><h2>${t.journey}</h2><ol>${t.steps.map(([heading, body], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><strong>${heading}</strong><p>${body}</p></li>`).join('')}</ol></section>
+    <section class="support section-shell reveal" id="support"><div class="support-intro"><p class="eyebrow">${t.supportEyebrow}</p><h2>${t.support}</h2><p>${t.supportText}</p><a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0" target="_blank" rel="noopener noreferrer">${t.download}</a></div><aside class="donation-card"><p class="eyebrow">DonationWare</p><h3>${t.donateTitle}</h3><p>${t.donateText}</p><div class="coffee-button-holder" data-bmc-button aria-label="${t.donateLabel}"></div></aside></section>
     <section class="closing section-shell reveal" id="start"><p class="eyebrow">${t.closingEyebrow}</p><h2>${t.closing}</h2><p>${t.closingText}</p><a class="button button-primary" href="#top" data-back-to-top>${t.top}</a></section>`;
   document.querySelector('#footer').innerHTML = t.footer.map(item => `<span>${item}</span>`).join('');
   document.querySelector('.lightbox-close').textContent = t.close;
@@ -91,6 +92,30 @@ function render(language) {
   document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
   bindLightbox();
   bindBackToTop();
+  loadDonationButtons();
+}
+
+let donationWidgetLoading;
+
+function renderDonationButtons() {
+  if (!window.bmcBtnWidget) return;
+  document.querySelectorAll('[data-bmc-button]').forEach((holder) => {
+    holder.innerHTML = window.bmcBtnWidget('Buy me a coffee', 'knhsynths', '#FF5F5F', '☕', 'Lato', '#ffffff', '#000000', '#FFDD00');
+  });
+}
+
+function loadDonationButtons() {
+  if (window.bmcBtnWidget) {
+    renderDonationButtons();
+    return;
+  }
+  if (donationWidgetLoading) return;
+  donationWidgetLoading = true;
+  const script = document.createElement('script');
+  script.src = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
+  script.type = 'text/javascript';
+  script.onload = renderDonationButtons;
+  document.head.append(script);
 }
 
 const lightbox = document.querySelector('.lightbox');

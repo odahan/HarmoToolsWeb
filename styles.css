@@ -41,7 +41,7 @@ h1 em,h2 em { color:var(--teal); font-style:italic; }
 .hero-facts dd { margin:3px 0 0; }
 .image-frame { margin:0; overflow:hidden; background:var(--surface); border:1px solid var(--line); box-shadow:20px 20px 0 rgba(100,200,191,.08); }
 .image-frame img { display:block; width:100%; height:auto; }
-.hero-visual figcaption { padding:14px 18px; color:var(--muted); border-top:1px solid var(--line); font-size:13px; }
+.hero-caption { display:block; padding:14px 18px; color:var(--muted); border-top:1px solid var(--line); font-size:13px; }
 .manifesto { display:grid; grid-template-columns:.35fr 1.15fr .65fr; gap:36px; align-items:start; padding-block:105px; border-top:1px solid var(--line); }
 .manifesto .eyebrow { padding-top:12px; }
 .manifesto h2 { margin:0; font-size:clamp(38px,5vw,72px); }

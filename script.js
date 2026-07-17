@@ -11,6 +11,26 @@ const content = {
     manifestoEyebrow: 'One tool, one instinct', manifesto: 'Less theory to look up.<br><em>More music to imagine.</em>', manifestoText: 'HarmoTools brings the essential landmarks of harmony into a calm, precise and unmistakably musical interface.', toolsEyebrow: 'Fourteen gestures, one musical thread', tools: 'Explore. Understand.<br><em>Make it sound.</em>',
     journeyEyebrow: 'A natural flow', journey: 'From curiosity<br>to progression.', supportEyebrow: 'Download & support', support: 'Make music.<br><em>Keep it moving.</em>', supportText: 'OD HarmoTools is DonationWare: free to use, and sustained by donations from the people who find it useful.', download: 'Download OD HarmoTools', donateTitle: 'Enjoying HarmoTools?', donateText: 'If it helps your musical practice, you can support its development with a coffee.', donateLabel: 'Support OD HarmoTools on Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'A little less<br>uncertainty. <em>A lot more harmony.</em>', closingText: 'A toolbox designed to keep your ear at the centre of every decision.', top: 'Back to the top', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Close',
     midiExport: ['MIDI export', 'Import the progression into your DAW.', 'Each chord memory now has its own MIDI export button. Save the progression as a Standard MIDI File (format 0), then simply drag and drop it into your DAW to continue working with it there.', 'A chord progression exported from OD HarmoTools and imported into a DAW', 'Drag and drop the exported MIDI file into your DAW.'],
+    scaleSupport: {
+      eyebrow: 'Scales & Chords · Scale Finder',
+      heading: 'A scale library<br><em>built to explore.</em>',
+      intro: 'Both tools share the same scale library: 52 distinct public scale definitions, including 48 in the full recognition catalogue.',
+      stats: [['52', 'public scale definitions'], ['48', 'recognition candidates'], ['25', 'exotic scales']],
+      groups: [
+        ['Core scales', 'Major, natural minor, harmonic minor, ascending melodic minor.'],
+        ['Major modes', 'Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian.'],
+        ['Harmonic minor modes', 'Modes 1 to 7.'],
+        ['Ascending melodic minor modes', 'Modes 1 to 7.'],
+        ['Pentatonic scales', 'Major, minor.'],
+        ['Symmetrical & jazz', 'Whole tone, octatonic whole-half, octatonic half-whole, augmented.'],
+        ['Blues & bebop', 'Minor blues, major blues, bebop dominant, bebop major, bebop Dorian.'],
+        ['Rare major/minor families', 'Harmonic major, double harmonic major, Hungarian minor, Ukrainian Dorian, Neapolitan major, Neapolitan minor.'],
+        ['Westernised Eastern colours', 'Persian, Arabic, Spanish Phrygian, Oriental, Egyptian.'],
+        ['Japanese scales', 'Hirajoshi, Insen, Iwato, Yo, Kumoi.']
+      ],
+      aliases: 'The two octatonic scales also accept the compatibility aliases <code>DiminishedWholeHalf</code> and <code>DiminishedHalfWhole</code>; these are not additional scales.',
+      api: '<code>ModeCatalog.Standard.AllWithPentatonicAndExoticScales</code> contains the 48 recognition candidates: 21 principal modes, 2 pentatonic scales and 25 exotic scales. The direct <code>Major</code>, <code>NaturalMinor</code>, <code>HarmonicMinor</code> and <code>MelodicMinorAscending</code> definitions remain constructible alongside their corresponding mode 1 definitions, without duplicating the recognition catalogue. Exotic definitions are centralised in <code>ExoticScales</code>.'
+    },
     steps: [['Choose a key', 'Start with the circle, a scale or a handful of notes.'], ['Hear the possibilities', 'Move through chords, notes and colours.'], ['Keep what sounds right', 'Save, sequence and play your discoveries.']],
     features: [
       ['Scales & chords', 'Build your playground.', 'Choose a root and a mode, then immediately see the notes, diatonic chords and keyboard come alive. A clear foundation for composing with confidence.', 'Scales and chords in OD HarmoTools', 'Build a scale and see its harmony.'],
@@ -34,6 +54,26 @@ const content = {
     manifestoEyebrow: 'Un outil, un réflexe', manifesto: 'Moins de théorie à chercher.<br><em>Plus de musique à imaginer.</em>', manifestoText: 'HarmoTools rassemble les repères essentiels de l’harmonie dans une interface calme, précise et résolument musicale.', toolsEyebrow: 'Quatorze gestes, un même fil musical', tools: 'Explorer. Comprendre.<br><em>Faire sonner.</em>',
     journeyEyebrow: 'Un parcours naturel', journey: 'De la curiosité<br>à la progression.', supportEyebrow: 'Télécharger & soutenir', support: 'Faites de la musique.<br><em>Faites-la vivre.</em>', supportText: 'OD HarmoTools est un logiciel DonationWare : son utilisation est gratuite et son développement est soutenu par les dons de celles et ceux qui l’apprécient.', download: 'Télécharger OD HarmoTools', donateTitle: 'HarmoTools vous est utile ?', donateText: 'Si l’application accompagne votre pratique musicale, vous pouvez soutenir son développement avec un café.', donateLabel: 'Soutenir OD HarmoTools sur Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'Un peu moins<br>de doute. <em>Beaucoup plus d’harmonie.</em>', closingText: 'Une boîte à outils pensée pour garder l’oreille au centre de chaque décision.', top: 'Revenir au début', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Fermer',
     midiExport: ['Export MIDI', 'Importez la progression dans votre DAW.', 'Chaque mémoire d’accord dispose désormais de son propre bouton d’export MIDI. Enregistrez la progression au format MIDI standard 0, puis glissez-déposez simplement le fichier dans votre DAW pour poursuivre le travail.', 'Une progression d’accords exportée depuis OD HarmoTools et importée dans un DAW', 'Glissez-déposez le fichier MIDI exporté dans votre DAW.'],
+    scaleSupport: {
+      eyebrow: 'Gammes & accords · Recherche de gamme',
+      heading: 'Une bibliothèque de gammes<br><em>pour explorer.</em>',
+      intro: 'Les deux modules partagent la même bibliothèque : 52 définitions publiques de gammes distinctes, dont 48 réunies dans le catalogue maximal de reconnaissance.',
+      stats: [['52', 'définitions publiques'], ['48', 'candidates à la reconnaissance'], ['25', 'gammes exotiques']],
+      groups: [
+        ['Gammes fondamentales', 'Majeure, mineure naturelle, mineure harmonique, mineure mélodique ascendante.'],
+        ['Modes majeurs', 'Ionien, dorien, phrygien, lydien, mixolydien, éolien, locrien.'],
+        ['Modes de la mineure harmonique', 'Modes 1 à 7.'],
+        ['Modes de la mineure mélodique ascendante', 'Modes 1 à 7.'],
+        ['Pentatoniques', 'Majeure, mineure.'],
+        ['Symétriques et jazz', 'Tons entiers, octatonique ton-demi-ton, octatonique demi-ton-ton, augmentée.'],
+        ['Blues et bebop', 'Blues mineure, blues majeure, bebop dominante, bebop majeure, bebop dorienne.'],
+        ['Familles majeure/mineure rares', 'Majeure harmonique, double harmonique majeure, mineure hongroise, dorienne ukrainienne, napolitaine majeure, napolitaine mineure.'],
+        ['Couleurs orientales occidentalisées', 'Persane, arabe, phrygienne espagnole, orientale, égyptienne.'],
+        ['Japonaises', 'Hirajoshi, Insen, Iwato, Yo, Kumoi.']
+      ],
+      aliases: 'Les deux octatoniques acceptent aussi les alias de compatibilité <code>DiminishedWholeHalf</code> et <code>DiminishedHalfWhole</code> : ce ne sont pas des gammes additionnelles.',
+      api: '<code>ModeCatalog.Standard.AllWithPentatonicAndExoticScales</code> contient les 48 candidates de reconnaissance : 21 modes principaux, 2 pentatoniques et 25 exotiques. Les définitions directes <code>Major</code>, <code>NaturalMinor</code>, <code>HarmonicMinor</code> et <code>MelodicMinorAscending</code> restent constructibles, parallèles à leurs définitions de mode 1 correspondantes, sans doubler le catalogue de reconnaissance. Les définitions exotiques sont centralisées dans <code>ExoticScales</code>.'
+    },
     steps: [['Choisissez une tonalité', 'Partez du cercle, d’une gamme ou de quelques notes.'], ['Écoutez les possibilités', 'Faites défiler les accords, les notes et les couleurs.'], ['Gardez ce qui sonne juste', 'Mémorisez, enchaînez et jouez vos trouvailles.']],
     features: [
       ['Gammes & accords', 'Construisez votre terrain de jeu.', 'Choisissez une fondamentale et un mode, puis voyez instantanément les notes, les accords diatoniques et le clavier prendre vie. Une base nette pour composer sans hésiter.', 'Gammes et accords dans OD HarmoTools', 'Construire une gamme et voir son harmonie.'],
@@ -55,6 +95,7 @@ const content = {
 
 let revealObserver;
 const imagePath = (file) => `ScreenShots/${file}`;
+const scaleSupportMarkup = (scaleSupport) => `<section class="scale-support section-shell reveal" aria-label="${scaleSupport.eyebrow}"><div class="scale-support-intro"><p class="eyebrow">${scaleSupport.eyebrow}</p><h3>${scaleSupport.heading}</h3><p>${scaleSupport.intro}</p><dl class="scale-stats">${scaleSupport.stats.map(([number, label]) => `<div><dt>${number}</dt><dd>${label}</dd></div>`).join('')}</dl></div><div class="scale-support-content"><div class="scale-groups">${scaleSupport.groups.map(([name, scales]) => `<article><h4>${name}</h4><p>${scales}</p></article>`).join('')}</div><p class="scale-note">${scaleSupport.aliases}</p><p class="scale-api"><strong>API</strong>${scaleSupport.api}</p></div></section>`;
 const featureMarkup = (feature, index, midiExport) => {
   const [eyebrow, heading, description, alt, caption] = feature;
   const image = imagePath(screenshots[index + 1]);
@@ -76,7 +117,7 @@ function render(language) {
   document.querySelector('#site-content').innerHTML = `
     <section class="hero section-shell"><div class="hero-copy reveal"><p class="eyebrow">${t.heroEyebrow}</p><h1>${t.hero}</h1><p class="hero-text">${t.heroText}</p><div class="hero-actions"><a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0" target="_blank" rel="noopener noreferrer">${t.download}</a><div class="coffee-button-holder hero-donation" data-bmc-button aria-label="${t.donateLabel}"></div><a class="text-link" href="#tools">${t.primary}</a><a class="text-link" href="#journey">${t.secondary}</a></div><p class="hero-donation-note">${t.donationNote}</p><dl class="hero-facts">${t.facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl></div><button class="hero-visual reveal screenshot image-frame" data-image="${imagePath(screenshots[0])}" data-caption="${t.heroCaption}" aria-label="${t.heroCaption}"><img src="${imagePath(screenshots[0])}" alt="${t.features[0][3]}"><span class="hero-caption">${t.heroCaption}</span></button></section>
     <section class="manifesto section-shell reveal"><p class="eyebrow">${t.manifestoEyebrow}</p><h2>${t.manifesto}</h2><p>${t.manifestoText}</p></section>
-    <section class="tools" id="tools"><div class="section-shell section-intro reveal"><p class="eyebrow">${t.toolsEyebrow}</p><h2>${t.tools}</h2></div>${t.features.map((feature, index) => featureMarkup(feature, index, t.midiExport)).join('')}</section>
+    <section class="tools" id="tools"><div class="section-shell section-intro reveal"><p class="eyebrow">${t.toolsEyebrow}</p><h2>${t.tools}</h2></div>${t.features.slice(0, 2).map((feature, index) => featureMarkup(feature, index, t.midiExport)).join('')}${scaleSupportMarkup(t.scaleSupport)}${t.features.slice(2).map((feature, index) => featureMarkup(feature, index + 2, t.midiExport)).join('')}</section>
     <section class="journey section-shell reveal" id="journey"><p class="eyebrow">${t.journeyEyebrow}</p><h2>${t.journey}</h2><ol>${t.steps.map(([heading, body], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><strong>${heading}</strong><p>${body}</p></li>`).join('')}</ol></section>
     <section class="support section-shell reveal" id="support"><div class="support-intro"><p class="eyebrow">${t.supportEyebrow}</p><h2>${t.support}</h2><p>${t.supportText}</p><a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0" target="_blank" rel="noopener noreferrer">${t.download}</a></div><aside class="donation-card"><p class="eyebrow">DonationWare</p><h3>${t.donateTitle}</h3><p>${t.donateText}</p><div class="coffee-button-holder" data-bmc-button aria-label="${t.donateLabel}"></div></aside></section>
     <section class="closing section-shell reveal" id="start"><p class="eyebrow">${t.closingEyebrow}</p><h2>${t.closing}</h2><p>${t.closingText}</p><a class="button button-primary" href="#top" data-back-to-top>${t.top}</a></section>`;

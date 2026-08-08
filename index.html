@@ -3,22 +3,278 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OD HarmoTools — a practical workspace for exploring musical harmony.">
+  <meta name="description" content="OD HarmoTools — a practical workspace for exploring musical harmony. Scales, chords, keys, circle of fifths, sequencers and MIDI export.">
+  <meta name="theme-color" content="#0d1311">
+  <meta name="author" content="Olivier Dahan">
+  <link rel="canonical" href="https://www.e-naxos.com/HarmoTools/">
+  <link rel="icon" type="image/png" href="ScreenShots/AppIcon.png">
+  <link rel="apple-touch-icon" href="ScreenShots/AppIcon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OD HarmoTools">
+  <meta property="og:title" content="OD HarmoTools — Harmony in motion">
+  <meta property="og:description" content="A practical workspace for exploring musical harmony. Scales, chords, keys, sequencers and MIDI export — DonationWare, full version.">
+  <meta property="og:url" content="https://www.e-naxos.com/HarmoTools/">
+  <meta property="og:image" content="https://www.e-naxos.com/HarmoTools/ScreenShots/01-ScalesAndChords.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OD HarmoTools — Harmony in motion">
+  <meta name="twitter:description" content="A practical workspace for exploring musical harmony. Scales, chords, keys, sequencers and MIDI export.">
+  <meta name="twitter:image" content="https://www.e-naxos.com/HarmoTools/ScreenShots/01-ScalesAndChords.png">
   <title>OD HarmoTools — Harmony in motion</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.buymeacoffee.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "OD HarmoTools",
+    "description": "A practical workspace for exploring musical harmony: scales, chords, keys, circle of fifths, sequencers and MIDI export.",
+    "applicationCategory": "MultimediaApplication",
+    "url": "https://www.e-naxos.com/HarmoTools/",
+    "image": "https://www.e-naxos.com/HarmoTools/ScreenShots/01-ScalesAndChords.png",
+    "license": "DonationWare",
+    "author": { "@type": "Person", "name": "Olivier Dahan" }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#site-content">Skip to content</a>
   <div class="reading-progress" aria-hidden="true"><span></span></div>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="OD HarmoTools, back to top"><img class="brand-logo" src="ScreenShots/AppIcon.png" alt=""><span>HarmoTools</span></a>
-    <nav id="navigation" aria-label="Main navigation"></nav>
+    <a class="brand" href="#top" aria-label="OD HarmoTools, back to top"><img class="brand-logo" src="ScreenShots/AppIcon.png" alt="" width="38" height="38"><span>HarmoTools</span></a>
+    <nav id="navigation" aria-label="Main navigation"><a href="#tools">Tools</a><a href="#journey">The flow</a><a class="nav-cta" href="#support">Download</a></nav>
     <div class="language-picker" role="group" aria-label="Choose language">
       <button type="button" class="language-option is-active" data-language="en" aria-pressed="true"><span aria-hidden="true">🇺🇸</span> EN</button>
       <button type="button" class="language-option" data-language="fr" aria-pressed="false"><span aria-hidden="true">🇫🇷</span> FR</button>
     </div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation"><span aria-hidden="true"></span></button>
   </header>
-  <main id="site-content"></main>
-  <footer class="site-footer" id="footer"></footer>
+  <main id="site-content">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">The workspace for curious musicians</p>
+        <h1>Harmony<br><em>in motion.</em></h1>
+        <p class="hero-text">OD HarmoTools makes scales, chords and keys immediately playable, visible and connected.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&amp;dl=0" target="_blank" rel="noopener noreferrer">Download the full version</a>
+          <div class="coffee-button-holder hero-donation" data-bmc-button aria-label="Support OD HarmoTools on Buy Me a Coffee"><a class="bmc-fallback" href="https://www.buymeacoffee.com/knhsynths" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></div>
+          <a class="text-link" href="#tools">Discover the tools</a>
+          <a class="text-link" href="#journey">See the flow</a>
+          <p class="download-note">The latest version — always up to date.</p>
+        </div>
+        <p class="hero-donation-note">Full version, not a demo. Available for unrestricted use; voluntary donations support ongoing development.</p>
+        <dl class="hero-facts">
+          <div><dt>For</dt><dd>Musicians &amp; composers</dd></div>
+          <div><dt>With</dt><dd>Audio, keyboard &amp; MIDI</dd></div>
+          <div><dt>Access</dt><dd>Unrestricted use</dd></div>
+        </dl>
+      </div>
+      <button class="hero-visual reveal screenshot image-frame" data-image="ScreenShots/01-ScalesAndChords.png" data-caption="From scale to chord, everything becomes tangible." aria-label="From scale to chord, everything becomes tangible.">
+        <span class="visual-brand" aria-hidden="true"><img src="ScreenShots/AppIcon.png" alt="" width="37" height="37"><span><strong>OD HarmoTools</strong><small>Harmony workspace</small></span></span>
+        <span class="screenshot-crop"><img src="ScreenShots/01-ScalesAndChords.png" alt="Scales and chords in OD HarmoTools" loading="eager" fetchpriority="high" decoding="async"></span>
+        <span class="hero-caption">From scale to chord, everything becomes tangible.</span>
+      </button>
+    </section>
+    <section class="manifesto section-shell reveal">
+      <p class="eyebrow">One tool, one instinct</p>
+      <h2>Less theory to look up.<br><em>More music to imagine.</em></h2>
+      <p>HarmoTools brings the essential landmarks of harmony into a calm, precise and unmistakably musical interface.</p>
+    </section>
+    <section class="tools" id="tools">
+      <div class="section-shell section-intro reveal">
+        <p class="eyebrow">Fourteen gestures, one musical thread</p>
+        <h2>Explore. Understand.<br><em>Make it sound.</em></h2>
+      </div>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">01</div>
+        <div class="feature-content">
+          <p class="eyebrow">Scales &amp; chords</p>
+          <h3>Build your playground.</h3>
+          <p>Choose a root and a mode, then immediately see the notes, diatonic chords and keyboard come alive. A clear foundation for composing with confidence.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/02.-ScalesAndChords-Chords.png" data-caption="Build a scale and see its harmony." aria-label="Build a scale and see its harmony."><span class="screenshot-crop"><img src="ScreenShots/02.-ScalesAndChords-Chords.png" alt="Scales and chords in OD HarmoTools" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">02</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/03-ScaleFinder.png" data-caption="Find a tonal colour from your notes." aria-label="Find a tonal colour from your notes."><span class="screenshot-crop"><img src="ScreenShots/03-ScaleFinder.png" alt="Scale finder by selected notes" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Scale finder</p>
+          <h3>An idea in mind? Find its world.</h3>
+          <p>Select your notes, let HarmoTools reveal candidate scales and open the ones that deserve your ear.</p>
+        </div>
+      </article>
+      <section class="scale-support section-shell reveal" aria-label="Scales &amp; Chords · Scale Finder">
+        <div class="scale-support-intro">
+          <p class="eyebrow">Scales &amp; Chords · Scale Finder</p>
+          <h3>A scale library<br><em>built to explore.</em></h3>
+          <p>Both tools share the same scale library: 52 distinct public scale definitions, including 48 in the full recognition catalogue.</p>
+          <dl class="scale-stats">
+            <div><dt>52</dt><dd>public scale definitions</dd></div>
+            <div><dt>48</dt><dd>recognition candidates</dd></div>
+            <div><dt>25</dt><dd>exotic scales</dd></div>
+          </dl>
+        </div>
+        <div class="scale-support-content">
+          <div class="scale-groups">
+            <article><h4>Core scales</h4><p>Major, natural minor, harmonic minor, ascending melodic minor.</p></article>
+            <article><h4>Major modes</h4><p>Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian.</p></article>
+            <article><h4>Harmonic minor modes</h4><p>Modes 1 to 7.</p></article>
+            <article><h4>Ascending melodic minor modes</h4><p>Modes 1 to 7.</p></article>
+            <article><h4>Pentatonic scales</h4><p>Major, minor.</p></article>
+            <article><h4>Symmetrical &amp; jazz</h4><p>Whole tone, octatonic whole-half, octatonic half-whole, augmented.</p></article>
+            <article><h4>Blues &amp; bebop</h4><p>Minor blues, major blues, bebop dominant, bebop major, bebop Dorian.</p></article>
+            <article><h4>Rare major/minor families</h4><p>Harmonic major, double harmonic major, Hungarian minor, Ukrainian Dorian, Neapolitan major, Neapolitan minor.</p></article>
+            <article><h4>Westernised Eastern colours</h4><p>Persian, Arabic, Spanish Phrygian, Oriental, Egyptian.</p></article>
+            <article><h4>Japanese scales</h4><p>Hirajoshi, Insen, Iwato, Yo, Kumoi.</p></article>
+          </div>
+        </div>
+      </section>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">03</div>
+        <div class="feature-content">
+          <p class="eyebrow">Chord name</p>
+          <h3>From symbol to sound, with no detour.</h3>
+          <p>Enter a chord and inspect its material: notes, keyboard voicing and harmonic identity. Perfect for checking an instinct or enriching a progression.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/04-ChordName-input.png" data-caption="Read a chord symbol and visualise its notes." aria-label="Read a chord symbol and visualise its notes."><span class="screenshot-crop"><img src="ScreenShots/04-ChordName-input.png" alt="A chord symbol entered in OD HarmoTools" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">04</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/05-ChordFinder.png" data-caption="Recognise a chord from the keyboard." aria-label="Recognise a chord from the keyboard."><span class="screenshot-crop"><img src="ScreenShots/05-ChordFinder.png" alt="Chord finder from played notes" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Chord finder</p>
+          <h3>Play the notes. Let the chord speak.</h3>
+          <p>The keyboard becomes a harmony detector: possible names, inversions and spellings appear clearly to speed up your analysis.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">05</div>
+        <div class="feature-content">
+          <p class="eyebrow">Circle of fifths</p>
+          <h3>The map that connects every key.</h3>
+          <p>See key signatures, relative minors and degrees at a glance. Click, listen and change mode, then open the collapsible side panel to build a chord progression directly from the circle.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/06-CircleOfFifths.png" data-caption="Explore the circle of fifths and build a chord progression from its side panel." aria-label="Explore the circle of fifths and build a chord progression from its side panel."><span class="screenshot-crop"><img src="ScreenShots/06-CircleOfFifths.png" alt="Interactive circle of fifths with a collapsible chord-progression panel in OD HarmoTools" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">06</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/07-Frequencies-Compute.png" data-caption="Exact frequencies for every note." aria-label="Exact frequencies for every note."><span class="screenshot-crop"><img src="ScreenShots/07-Frequencies-Compute.png" alt="Note frequency calculator" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Frequencies</p>
+          <h3>Every note has its precision.</h3>
+          <p>Connect note name, octave and frequency instantly. A dependable reference for synthesis, tuning and the details that matter.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">07</div>
+        <div class="feature-content">
+          <p class="eyebrow">Ranges</p>
+          <h3>Put your ideas in the right register.</h3>
+          <p>Compare frequency ranges and instrumental tessituras to write with greater accuracy, from the lowest notes to the highest.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/08-Frequencies-Ranges.png" data-caption="Visualise instrumental ranges." aria-label="Visualise instrumental ranges."><span class="screenshot-crop"><img src="ScreenShots/08-Frequencies-Ranges.png" alt="Instrument ranges and frequency bands" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">08</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/09-HomeFavoriteScales.png" data-caption="Keep favourite tonal colours within reach." aria-label="Keep favourite tonal colours within reach."><span class="screenshot-crop"><img src="ScreenShots/09-HomeFavoriteScales.png" alt="Home page with favourite scales" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Your favourites</p>
+          <h3>Your scales, ready whenever you are.</h3>
+          <p>Keep the worlds that inspire you and return to them in one move. Your workspace organises itself around your own tonal palette.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">09</div>
+        <div class="feature-content">
+          <p class="eyebrow">Random sequencer</p>
+          <h3>Let chance write the first draft.</h3>
+          <p>Create evolving patterns from 4 to 64 steps. Use any scale or a custom selection of notes entered with the mouse or a MIDI keyboard, store up to six sequences, then export them as MIDI files for your DAW.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10C-RandomSequencer.png" data-caption="Generate, save and export a random MIDI sequence." aria-label="Generate, save and export a random MIDI sequence."><span class="screenshot-crop"><img src="ScreenShots/10C-RandomSequencer.png" alt="Adjustable random sequencer on the home page" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">10</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10-HomeChordSequencer.png" data-caption="Play and shape a chord progression." aria-label="Play and shape a chord progression."><span class="screenshot-crop"><img src="ScreenShots/10-HomeChordSequencer.png" alt="Chord sequencer on the home page" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Chord sequencer</p>
+          <h3>Let the progression move.</h3>
+          <p>Save your chords, set tempo, gate, strum and instrument. Then hear the progression breathe before taking it further.</p>
+        </div>
+      </article>
+      <article class="feature feature-followup section-shell feature-reverse reveal">
+        <div class="feature-number">MIDI</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10B-ChordImportAbleton.png" data-caption="Drag and drop exported progressions or sequences into your DAW." aria-label="Drag and drop exported progressions or sequences into your DAW."><span class="screenshot-crop"><img src="ScreenShots/10B-ChordImportAbleton.png" alt="MIDI material exported from OD HarmoTools and imported into a DAW" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">MIDI export</p>
+          <h3>Bring your progressions and sequences into your DAW.</h3>
+          <p>Export chord progressions and Random Sequencer patterns as Standard MIDI Files (format 0), then simply drag and drop them into your DAW to continue developing your ideas there.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">11</div>
+        <div class="feature-content">
+          <p class="eyebrow">Audio settings</p>
+          <h3>A workspace that listens to you.</h3>
+          <p>Choose your SoundFont, audio output and preview settings. HarmoTools adapts to your studio, never the other way around.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/11-Settings1.png" data-caption="Personalise your sound and workspace." aria-label="Personalise your sound and workspace."><span class="screenshot-crop"><img src="ScreenShots/11-Settings1.png" alt="Audio and appearance settings" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">12</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/12-Settings2.png" data-caption="Connect MIDI input and keep control." aria-label="Connect MIDI input and keep control."><span class="screenshot-crop"><img src="ScreenShots/12-Settings2.png" alt="MIDI and diagnostic settings" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">MIDI &amp; diagnostics</p>
+          <h3>Plug in, play, explore.</h3>
+          <p>Connect a MIDI keyboard, monitor activity and stay in control of the setup. A direct bridge from your fingers to your ideas.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">13</div>
+        <div class="feature-content">
+          <p class="eyebrow">Built-in guide</p>
+          <h3>Move forward with the right answers.</h3>
+          <p>The manual travels with the application, so every feature stays approachable — from the first scale to your next progression.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/13-About-UserManual.png" data-caption="Clear documentation, available from the app." aria-label="Clear documentation, available from the app."><span class="screenshot-crop"><img src="ScreenShots/13-About-UserManual.png" alt="About page and user manual" loading="lazy" decoding="async"></span></button>
+      </article>
+    </section>
+    <section class="journey section-shell reveal" id="journey">
+      <p class="eyebrow">A natural flow</p>
+      <h2>From curiosity<br>to progression.</h2>
+      <ol>
+        <li><span>01</span><strong>Choose a key</strong><p>Start with the circle, a scale or a handful of notes.</p></li>
+        <li><span>02</span><strong>Hear the possibilities</strong><p>Move through chords, notes and colours.</p></li>
+        <li><span>03</span><strong>Keep what sounds right</strong><p>Save, sequence and play your discoveries.</p></li>
+      </ol>
+    </section>
+    <section class="support section-shell reveal" id="support">
+      <div class="support-intro">
+        <p class="eyebrow">Download &amp; support</p>
+        <h2>Make music.<br><em>Keep it moving.</em></h2>
+        <p>OD HarmoTools is DonationWare: the complete version is available for unrestricted use, and donations from the people who find it useful sustain its development.</p>
+        <a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&amp;dl=0" target="_blank" rel="noopener noreferrer">Download the full version</a>
+        <p class="download-note">The latest version — always up to date.</p>
+      </div>
+      <aside class="donation-card">
+        <p class="eyebrow">DonationWare</p>
+        <h3>Enjoying HarmoTools?</h3>
+        <p>If it helps your musical practice, you can support its development with a coffee.</p>
+        <div class="coffee-button-holder" data-bmc-button aria-label="Support OD HarmoTools on Buy Me a Coffee"><a class="bmc-fallback" href="https://www.buymeacoffee.com/knhsynths" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></div>
+      </aside>
+    </section>
+    <section class="closing section-shell reveal" id="start">
+      <p class="eyebrow">OD HarmoTools</p>
+      <h2>A little less<br>uncertainty. <em>A lot more harmony.</em></h2>
+      <p>A toolbox designed to keep your ear at the centre of every decision.</p>
+      <a class="button button-primary" href="#top" data-back-to-top>Back to the top</a>
+    </section>
+  </main>
+  <footer class="site-footer" id="footer"><span>OD HarmoTools</span><span>Practical Harmony for Musicians</span><span>© 2026 Olivier Dahan</span></footer>
   <dialog class="lightbox" aria-label="Screenshot preview"><button class="lightbox-close" aria-label="Close preview">Close</button><img src="" alt=""><p></p></dialog>
   <script src="script.js"></script>
 </body>

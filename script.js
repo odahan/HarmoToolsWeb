@@ -1,13 +1,22 @@
+document.documentElement.classList.add('js');
+
 const screenshots = [
   '01-ScalesAndChords.png', '02.-ScalesAndChords-Chords.png', '03-ScaleFinder.png', '04-ChordName-input.png',
   '05-ChordFinder.png', '06-CircleOfFifths.png', '07-Frequencies-Compute.png', '08-Frequencies-Ranges.png',
   '09-HomeFavoriteScales.png', '10C-RandomSequencer.png', '10-HomeChordSequencer.png', '11-Settings1.png', '12-Settings2.png', '13-About-UserManual.png'
 ];
 
+const STORAGE_KEY = 'od-harmotools-language';
+const DOWNLOAD_URL = 'https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0';
+const BMC_CDN = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
+const BMC_INTEGRITY = 'sha384-hPKwNGJlXU41YiK3xwGvKODwz62yCVUnp9xIZl8K0FueN6vB44otT6/VqhPoWMks';
+const BMC_PROFILE = 'knhsynths';
+
 const content = {
   en: {
     title: 'OD HarmoTools — Harmony in motion', description: 'OD HarmoTools — a practical workspace for exploring musical harmony.',
-    nav: ['Tools', 'The flow', 'Download'], heroEyebrow: 'The workspace for curious musicians', hero: 'Harmony<br><em>in motion.</em>', heroText: 'OD HarmoTools makes scales, chords and keys immediately playable, visible and connected.', primary: 'Discover the tools', download: 'Download the full version', secondary: 'See the flow', donationNote: 'Full version, not a demo. Available for unrestricted use; voluntary donations support ongoing development.', facts: [['For', 'Musicians & composers'], ['With', 'Audio, keyboard & MIDI'], ['Access', 'Unrestricted use']], heroCaption: 'From scale to chord, everything becomes tangible.',
+    nav: ['Tools', 'The flow', 'Download'], donateButtonText: 'Buy me a coffee', downloadNote: 'The latest version — always up to date.',
+    heroEyebrow: 'The workspace for curious musicians', hero: 'Harmony<br><em>in motion.</em>', heroText: 'OD HarmoTools makes scales, chords and keys immediately playable, visible and connected.', primary: 'Discover the tools', download: 'Download the full version', secondary: 'See the flow', donationNote: 'Full version, not a demo. Available for unrestricted use; voluntary donations support ongoing development.', facts: [['For', 'Musicians & composers'], ['With', 'Audio, keyboard & MIDI'], ['Access', 'Unrestricted use']], heroCaption: 'From scale to chord, everything becomes tangible.',
     manifestoEyebrow: 'One tool, one instinct', manifesto: 'Less theory to look up.<br><em>More music to imagine.</em>', manifestoText: 'HarmoTools brings the essential landmarks of harmony into a calm, precise and unmistakably musical interface.', toolsEyebrow: 'Fourteen gestures, one musical thread', tools: 'Explore. Understand.<br><em>Make it sound.</em>',
     journeyEyebrow: 'A natural flow', journey: 'From curiosity<br>to progression.', supportEyebrow: 'Download & support', support: 'Make music.<br><em>Keep it moving.</em>', supportText: 'OD HarmoTools is DonationWare: the complete version is available for unrestricted use, and donations from the people who find it useful sustain its development.', download: 'Download the full version', donateTitle: 'Enjoying HarmoTools?', donateText: 'If it helps your musical practice, you can support its development with a coffee.', donateLabel: 'Support OD HarmoTools on Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'A little less<br>uncertainty. <em>A lot more harmony.</em>', closingText: 'A toolbox designed to keep your ear at the centre of every decision.', top: 'Back to the top', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Close',
     midiExport: ['MIDI export', 'Bring your progressions and sequences into your DAW.', 'Export chord progressions and Random Sequencer patterns as Standard MIDI Files (format 0), then simply drag and drop them into your DAW to continue developing your ideas there.', 'MIDI material exported from OD HarmoTools and imported into a DAW', 'Drag and drop exported progressions or sequences into your DAW.'],
@@ -48,9 +57,10 @@ const content = {
   },
   fr: {
     title: 'OD HarmoTools — L’harmonie en mouvement', description: 'OD HarmoTools — un espace de travail pratique pour explorer l’harmonie musicale.',
-    nav: ['Les outils', 'Le parcours', 'Télécharger'], heroEyebrow: 'L’espace de travail des musiciens curieux', hero: 'L’harmonie<br><em>en mouvement.</em>', heroText: 'OD HarmoTools rend les gammes, les accords et les tonalités immédiatement jouables, visibles et reliés entre eux.', primary: 'Découvrir les outils', download: 'Télécharger la version complète', secondary: 'Voir le parcours', donationNote: 'Version complète, sans démo. Utilisation libre ; un don volontaire soutient le développement.', facts: [['Pour', 'Musiciens & compositeurs'], ['Avec', 'Audio, clavier & MIDI'], ['Accès', 'Utilisation libre']], heroCaption: 'De la gamme à l’accord, tout devient tangible.',
+    nav: ['Les outils', 'Le parcours', 'Télécharger'], donateButtonText: 'Offrir un café', downloadNote: 'La dernière version — toujours à jour.',
+    heroEyebrow: 'L’espace de travail des musiciens curieux', hero: 'L’harmonie<br><em>en mouvement.</em>', heroText: 'OD HarmoTools rend les gammes, les accords et les tonalités immédiatement jouables, visibles et reliés entre eux.', primary: 'Découvrir les outils', download: 'Télécharger la version complète', secondary: 'Voir le parcours', donationNote: 'Version complète, sans démo. Utilisation libre ; un don volontaire soutient le développement.', facts: [['Pour', 'Musiciens & compositeurs'], ['Avec', 'Audio, clavier & MIDI'], ['Accès', 'Utilisation libre']], heroCaption: 'De la gamme à l’accord, tout devient tangible.',
     manifestoEyebrow: 'Un outil, un réflexe', manifesto: 'Moins de théorie à chercher.<br><em>Plus de musique à imaginer.</em>', manifestoText: 'HarmoTools rassemble les repères essentiels de l’harmonie dans une interface calme, précise et résolument musicale.', toolsEyebrow: 'Quatorze gestes, un même fil musical', tools: 'Explorer. Comprendre.<br><em>Faire sonner.</em>',
-    journeyEyebrow: 'Un parcours naturel', journey: 'De la curiosité<br>à la progression.', supportEyebrow: 'Télécharger & soutenir', support: 'Faites de la musique.<br><em>Faites-la vivre.</em>', supportText: 'OD HarmoTools est un logiciel DonationWare : la version complète est proposée en utilisation libre, et les dons de celles et ceux qui l’apprécient soutiennent son développement.', download: 'Télécharger la version complète', donateTitle: 'HarmoTools vous est utile ?', donateText: 'Si l’application accompagne votre pratique musicale, vous pouvez soutenir son développement avec un café.', donateLabel: 'Soutenir OD HarmoTools sur Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'Un peu moins<br>de doute. <em>Beaucoup plus d’harmonie.</em>', closingText: 'Une boîte à outils pensée pour garder l’oreille au centre de chaque décision.', top: 'Revenir au début', footer: ['OD HarmoTools', 'Practical Harmony for Musicians', '© 2026 Olivier Dahan'], close: 'Fermer',
+    journeyEyebrow: 'Un parcours naturel', journey: 'De la curiosité<br>à la progression.', supportEyebrow: 'Télécharger & soutenir', support: 'Faites de la musique.<br><em>Faites-la vivre.</em>', supportText: 'OD HarmoTools est un logiciel DonationWare : la version complète est proposée en utilisation libre, et les dons de celles et ceux qui l’apprécient soutiennent son développement.', download: 'Télécharger la version complète', donateTitle: 'HarmoTools vous est utile ?', donateText: 'Si l’application accompagne votre pratique musicale, vous pouvez soutenir son développement avec un café.', donateLabel: 'Soutenir OD HarmoTools sur Buy Me a Coffee', closingEyebrow: 'OD HarmoTools', closing: 'Un peu moins<br>de doute. <em>Beaucoup plus d’harmonie.</em>', closingText: 'Une boîte à outils pensée pour garder l’oreille au centre de chaque décision.', top: 'Revenir au début', footer: ['OD HarmoTools', 'L’harmonie pratique pour les musiciens', '© 2026 Olivier Dahan'], close: 'Fermer',
     midiExport: ['Export MIDI', 'Importez vos progressions et vos séquences dans votre DAW.', 'Exportez les progressions d’accords et les motifs du Séquenceur aléatoire au format MIDI standard 0, puis glissez-déposez-les simplement dans votre DAW pour continuer à développer vos idées.', 'Du matériel MIDI exporté depuis OD HarmoTools et importé dans un DAW', 'Glissez-déposez les progressions ou séquences exportées dans votre DAW.'],
     scaleSupport: {
       eyebrow: 'Gammes & accords · Recherche de gamme',
@@ -89,60 +99,190 @@ const content = {
   }
 };
 
+let currentLanguage = 'en';
 let revealObserver;
+let donationWidgetLoading;
+const lightbox = document.querySelector('.lightbox');
+const nav = document.querySelector('#navigation');
+const navToggle = document.querySelector('.nav-toggle');
+
 const imagePath = (file) => `ScreenShots/${file}`;
-const screenshotImageMarkup = (image, alt) => `<span class="screenshot-crop"><img src="${image}" alt="${alt}"></span>`;
-const scaleSupportMarkup = (scaleSupport) => `<section class="scale-support section-shell reveal" aria-label="${scaleSupport.eyebrow}"><div class="scale-support-intro"><p class="eyebrow">${scaleSupport.eyebrow}</p><h3>${scaleSupport.heading}</h3><p>${scaleSupport.intro}</p><dl class="scale-stats">${scaleSupport.stats.map(([number, label]) => `<div><dt>${number}</dt><dd>${label}</dd></div>`).join('')}</dl></div><div class="scale-support-content"><div class="scale-groups">${scaleSupport.groups.map(([name, scales]) => `<article><h4>${name}</h4><p>${scales}</p></article>`).join('')}</div></div></section>`;
+const screenshotImageMarkup = (image, alt, { lazy = true } = {}) => `<span class="screenshot-crop"><img src="${image}" alt="${alt}"${lazy ? ' loading="lazy" decoding="async"' : ' loading="eager" fetchpriority="high" decoding="async"'}></span>`;
+const screenshotButtonMarkup = (image, alt, caption) => `<button class="screenshot image-frame" data-image="${image}" data-caption="${caption}" aria-label="${caption}">${screenshotImageMarkup(image, alt)}</button>`;
+
+const buildNav = (t) => `<a href="#tools">${t.nav[0]}</a><a href="#journey">${t.nav[1]}</a><a class="nav-cta" href="#support">${t.nav[2]}</a>`;
+const buildDownloadNote = (t) => `<p class="download-note">${t.downloadNote}</p>`;
+const buildDonationHolder = (t, extraClass = '') => `<div class="coffee-button-holder${extraClass}" data-bmc-button aria-label="${t.donateLabel}"><a class="bmc-fallback" href="https://www.buymeacoffee.com/${BMC_PROFILE}" target="_blank" rel="noopener noreferrer">${t.donateButtonText}</a></div>`;
+
+const scaleSupportMarkup = (scaleSupport) => `<section class="scale-support section-shell reveal" aria-label="${scaleSupport.eyebrow}">
+  <div class="scale-support-intro">
+    <p class="eyebrow">${scaleSupport.eyebrow}</p>
+    <h3>${scaleSupport.heading}</h3>
+    <p>${scaleSupport.intro}</p>
+    <dl class="scale-stats">${scaleSupport.stats.map(([number, label]) => `<div><dt>${number}</dt><dd>${label}</dd></div>`).join('')}</dl>
+  </div>
+  <div class="scale-support-content">
+    <div class="scale-groups">${scaleSupport.groups.map(([name, scales]) => `<article><h4>${name}</h4><p>${scales}</p></article>`).join('')}</div>
+  </div>
+</section>`;
+
 const featureMarkup = (feature, index, midiExport) => {
   const [eyebrow, heading, description, alt, caption] = feature;
   const image = imagePath(screenshots[index + 1]);
   const reverse = index % 2 === 1 ? ' feature-reverse' : '';
-  const featureHtml = `<article class="feature section-shell${reverse} reveal"><div class="feature-number">${String(index + 1).padStart(2, '0')}</div>${reverse ? `<button class="screenshot image-frame" data-image="${image}" data-caption="${caption}" aria-label="${caption}">${screenshotImageMarkup(image, alt)}</button>` : ''}<div class="feature-content"><p class="eyebrow">${eyebrow}</p><h3>${heading}</h3><p>${description}</p></div>${!reverse ? `<button class="screenshot image-frame" data-image="${image}" data-caption="${caption}" aria-label="${caption}">${screenshotImageMarkup(image, alt)}</button>` : ''}</article>`;
-  if (index !== 9) return featureHtml;
-
+  const number = String(index + 1).padStart(2, '0');
+  const content = `<div class="feature-content"><p class="eyebrow">${eyebrow}</p><h3>${heading}</h3><p>${description}</p></div>`;
+  const screenshot = screenshotButtonMarkup(image, alt, caption);
+  let html = `<article class="feature section-shell${reverse} reveal"><div class="feature-number">${number}</div>${reverse ? screenshot : content}${reverse ? content : screenshot}</article>`;
+  if (index !== 9) return html;
   const [exportEyebrow, exportHeading, exportDescription, exportAlt, exportCaption] = midiExport;
   const exportImage = imagePath('10B-ChordImportAbleton.png');
-  return `${featureHtml}<article class="feature feature-followup section-shell feature-reverse reveal"><div class="feature-number">MIDI</div><button class="screenshot image-frame" data-image="${exportImage}" data-caption="${exportCaption}" aria-label="${exportCaption}">${screenshotImageMarkup(exportImage, exportAlt)}</button><div class="feature-content"><p class="eyebrow">${exportEyebrow}</p><h3>${exportHeading}</h3><p>${exportDescription}</p></div></article>`;
+  return `${html}<article class="feature feature-followup section-shell feature-reverse reveal"><div class="feature-number">MIDI</div>${screenshotButtonMarkup(exportImage, exportAlt, exportCaption)}<div class="feature-content"><p class="eyebrow">${exportEyebrow}</p><h3>${exportHeading}</h3><p>${exportDescription}</p></div></article>`;
 };
 
-function render(language) {
-  const t = content[language];
-  document.documentElement.lang = language;
+const buildContent = (t) => `
+  <section class="hero section-shell">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">${t.heroEyebrow}</p>
+      <h1>${t.hero}</h1>
+      <p class="hero-text">${t.heroText}</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="${DOWNLOAD_URL}" target="_blank" rel="noopener noreferrer">${t.download}</a>
+        ${buildDonationHolder(t, ' hero-donation')}
+        <a class="text-link" href="#tools">${t.primary}</a>
+        <a class="text-link" href="#journey">${t.secondary}</a>
+        ${buildDownloadNote(t)}
+      </div>
+      <p class="hero-donation-note">${t.donationNote}</p>
+      <dl class="hero-facts">${t.facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl>
+    </div>
+    <button class="hero-visual reveal screenshot image-frame" data-image="${imagePath(screenshots[0])}" data-caption="${t.heroCaption}" aria-label="${t.heroCaption}">
+      <span class="visual-brand" aria-hidden="true"><img src="ScreenShots/AppIcon.png" alt="" width="37" height="37"><span><strong>OD HarmoTools</strong><small>Harmony workspace</small></span></span>
+      ${screenshotImageMarkup(imagePath(screenshots[0]), t.features[0][3], { lazy: false })}
+      <span class="hero-caption">${t.heroCaption}</span>
+    </button>
+  </section>
+  <section class="manifesto section-shell reveal">
+    <p class="eyebrow">${t.manifestoEyebrow}</p>
+    <h2>${t.manifesto}</h2>
+    <p>${t.manifestoText}</p>
+  </section>
+  <section class="tools" id="tools">
+    <div class="section-shell section-intro reveal">
+      <p class="eyebrow">${t.toolsEyebrow}</p>
+      <h2>${t.tools}</h2>
+    </div>
+    ${t.features.slice(0, 2).map((feature, index) => featureMarkup(feature, index, t.midiExport)).join('')}
+    ${scaleSupportMarkup(t.scaleSupport)}
+    ${t.features.slice(2).map((feature, index) => featureMarkup(feature, index + 2, t.midiExport)).join('')}
+  </section>
+  <section class="journey section-shell reveal" id="journey">
+    <p class="eyebrow">${t.journeyEyebrow}</p>
+    <h2>${t.journey}</h2>
+    <ol>${t.steps.map(([heading, body], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><strong>${heading}</strong><p>${body}</p></li>`).join('')}</ol>
+  </section>
+  <section class="support section-shell reveal" id="support">
+    <div class="support-intro">
+      <p class="eyebrow">${t.supportEyebrow}</p>
+      <h2>${t.support}</h2>
+      <p>${t.supportText}</p>
+      <a class="button button-primary" href="${DOWNLOAD_URL}" target="_blank" rel="noopener noreferrer">${t.download}</a>
+      ${buildDownloadNote(t)}
+    </div>
+    <aside class="donation-card">
+      <p class="eyebrow">DonationWare</p>
+      <h3>${t.donateTitle}</h3>
+      <p>${t.donateText}</p>
+      ${buildDonationHolder(t)}
+    </aside>
+  </section>
+  <section class="closing section-shell reveal" id="start">
+    <p class="eyebrow">${t.closingEyebrow}</p>
+    <h2>${t.closing}</h2>
+    <p>${t.closingText}</p>
+    <a class="button button-primary" href="#top" data-back-to-top>${t.top}</a>
+  </section>`;
+
+const getStoredLanguage = () => {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored === 'fr' || stored === 'en' ? stored : null;
+  } catch (e) {
+    return null;
+  }
+};
+
+const storeLanguage = (lang) => {
+  try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* private mode or unavailable */ }
+};
+
+const detectLanguage = () => {
+  const languages = navigator.languages || [navigator.language || 'en'];
+  return languages.some((lang) => String(lang).toLowerCase().startsWith('fr')) ? 'fr' : 'en';
+};
+
+const setDocumentMeta = (t) => {
+  document.documentElement.lang = currentLanguage;
   document.title = t.title;
   document.querySelector('meta[name="description"]').content = t.description;
-  document.querySelector('#navigation').innerHTML = `<a href="#tools">${t.nav[0]}</a><a href="#journey">${t.nav[1]}</a><a class="nav-cta" href="#support">${t.nav[2]}</a>`;
-  document.querySelector('#site-content').innerHTML = `
-    <section class="hero section-shell"><div class="hero-copy reveal"><p class="eyebrow">${t.heroEyebrow}</p><h1>${t.hero}</h1><p class="hero-text">${t.heroText}</p><div class="hero-actions"><a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0" target="_blank" rel="noopener noreferrer">${t.download}</a><div class="coffee-button-holder hero-donation" data-bmc-button aria-label="${t.donateLabel}"></div><a class="text-link" href="#tools">${t.primary}</a><a class="text-link" href="#journey">${t.secondary}</a></div><p class="hero-donation-note">${t.donationNote}</p><dl class="hero-facts">${t.facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl></div><button class="hero-visual reveal screenshot image-frame" data-image="${imagePath(screenshots[0])}" data-caption="${t.heroCaption}" aria-label="${t.heroCaption}"><span class="visual-brand" aria-hidden="true"><img src="ScreenShots/AppIcon.png" alt=""><span><strong>OD HarmoTools</strong><small>Harmony workspace</small></span></span>${screenshotImageMarkup(imagePath(screenshots[0]), t.features[0][3])}<span class="hero-caption">${t.heroCaption}</span></button></section>
-    <section class="manifesto section-shell reveal"><p class="eyebrow">${t.manifestoEyebrow}</p><h2>${t.manifesto}</h2><p>${t.manifestoText}</p></section>
-    <section class="tools" id="tools"><div class="section-shell section-intro reveal"><p class="eyebrow">${t.toolsEyebrow}</p><h2>${t.tools}</h2></div>${t.features.slice(0, 2).map((feature, index) => featureMarkup(feature, index, t.midiExport)).join('')}${scaleSupportMarkup(t.scaleSupport)}${t.features.slice(2).map((feature, index) => featureMarkup(feature, index + 2, t.midiExport)).join('')}</section>
-    <section class="journey section-shell reveal" id="journey"><p class="eyebrow">${t.journeyEyebrow}</p><h2>${t.journey}</h2><ol>${t.steps.map(([heading, body], index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><strong>${heading}</strong><p>${body}</p></li>`).join('')}</ol></section>
-    <section class="support section-shell reveal" id="support"><div class="support-intro"><p class="eyebrow">${t.supportEyebrow}</p><h2>${t.support}</h2><p>${t.supportText}</p><a class="button button-primary" href="https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0" target="_blank" rel="noopener noreferrer">${t.download}</a></div><aside class="donation-card"><p class="eyebrow">DonationWare</p><h3>${t.donateTitle}</h3><p>${t.donateText}</p><div class="coffee-button-holder" data-bmc-button aria-label="${t.donateLabel}"></div></aside></section>
-    <section class="closing section-shell reveal" id="start"><p class="eyebrow">${t.closingEyebrow}</p><h2>${t.closing}</h2><p>${t.closingText}</p><a class="button button-primary" href="#top" data-back-to-top>${t.top}</a></section>`;
-  document.querySelector('#footer').innerHTML = t.footer.map(item => `<span>${item}</span>`).join('');
+  const og = (property, value) => { const el = document.querySelector(`meta[property="${property}"]`); if (el) el.setAttribute('content', value); };
+  og('og:title', t.title);
+  og('og:description', t.description);
+  const twitter = (name, value) => { const el = document.querySelector(`meta[name="${name}"]`); if (el) el.setAttribute('content', value); };
+  twitter('twitter:title', t.title);
+  twitter('twitter:description', t.description);
   document.querySelector('.lightbox-close').textContent = t.close;
-  document.querySelectorAll('.language-option').forEach(button => {
+};
+
+const syncLanguageButtons = (language) => {
+  document.querySelectorAll('.language-option').forEach((button) => {
     const selected = button.dataset.language === language;
     button.classList.toggle('is-active', selected);
     button.setAttribute('aria-pressed', String(selected));
   });
+};
+
+const bindRevealObserver = () => {
+  const elements = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    elements.forEach((element) => element.classList.add('is-visible'));
+    return;
+  }
   if (revealObserver) revealObserver.disconnect();
-  revealObserver = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); revealObserver.unobserve(entry.target); } }), { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
-  bindLightbox();
-  bindBackToTop();
-  loadDonationButtons();
-}
+  revealObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      revealObserver.unobserve(entry.target);
+    }
+  }), { threshold: 0.12 });
+  elements.forEach((element) => revealObserver.observe(element));
+};
 
-let donationWidgetLoading;
+const bindLightbox = () => document.querySelectorAll('.screenshot').forEach((button) => button.addEventListener('click', () => {
+  const image = button.querySelector('.screenshot-crop img');
+  lightbox.querySelector('img').src = button.dataset.image;
+  lightbox.querySelector('img').alt = image.alt;
+  lightbox.querySelector('p').textContent = button.dataset.caption;
+  lightbox.showModal();
+}));
 
-function renderDonationButtons() {
-  if (!window.bmcBtnWidget) return;
-  document.querySelectorAll('[data-bmc-button]').forEach((holder) => {
-    holder.innerHTML = window.bmcBtnWidget('Buy me a coffee', 'knhsynths', '#FF5F5F', '☕', 'Lato', '#ffffff', '#000000', '#FFDD00');
+const bindBackToTop = () => {
+  const button = document.querySelector('[data-back-to-top]');
+  if (button) button.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-}
+};
 
-function loadDonationButtons() {
+const renderDonationButtons = () => {
+  if (!window.bmcBtnWidget) return;
+  const text = currentLanguage === 'fr' ? content.fr.donateButtonText : content.en.donateButtonText;
+  document.querySelectorAll('[data-bmc-button]').forEach((holder) => {
+    holder.innerHTML = window.bmcBtnWidget(text, BMC_PROFILE, '#FF5F5F', '☕', 'Lato', '#ffffff', '#000000', '#FFDD00');
+  });
+};
+
+const loadDonationButtons = () => {
   if (window.bmcBtnWidget) {
     renderDonationButtons();
     return;
@@ -150,27 +290,81 @@ function loadDonationButtons() {
   if (donationWidgetLoading) return;
   donationWidgetLoading = true;
   const script = document.createElement('script');
-  script.src = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
+  script.src = BMC_CDN;
   script.type = 'text/javascript';
+  script.integrity = BMC_INTEGRITY;
+  script.crossOrigin = 'anonymous';
   script.onload = renderDonationButtons;
   document.head.append(script);
-}
+};
 
-const lightbox = document.querySelector('.lightbox');
-const bindLightbox = () => document.querySelectorAll('.screenshot').forEach((button) => button.addEventListener('click', () => { const image = button.querySelector('.screenshot-crop img'); lightbox.querySelector('img').src = button.dataset.image; lightbox.querySelector('img').alt = image.alt; lightbox.querySelector('p').textContent = button.dataset.caption; lightbox.showModal(); }));
-const bindBackToTop = () => {
-  const button = document.querySelector('[data-back-to-top]');
-  button.addEventListener('click', (event) => {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+const bindInteractions = () => {
+  bindRevealObserver();
+  bindLightbox();
+  bindBackToTop();
+  loadDonationButtons();
+};
+
+const render = (language) => {
+  currentLanguage = language;
+  const t = content[language];
+  setDocumentMeta(t);
+  document.querySelector('#navigation').innerHTML = buildNav(t);
+  document.querySelector('#site-content').innerHTML = buildContent(t);
+  document.querySelector('#footer').innerHTML = t.footer.map((item) => `<span>${item}</span>`).join('');
+  syncLanguageButtons(language);
+  bindInteractions();
+};
+
+const init = () => {
+  const language = getStoredLanguage() || detectLanguage();
+  currentLanguage = language;
+  if (language === 'fr') {
+    render('fr');
+  } else {
+    // The static English content is pre-rendered in index.html for SEO and no-JS users.
+    setDocumentMeta(content.en);
+    syncLanguageButtons('en');
+    bindInteractions();
+  }
+  storeLanguage(language);
+};
+
+const closeNav = () => {
+  nav.classList.remove('nav-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+};
+
+const initMobileNav = () => {
+  navToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', String(open));
+  });
+  nav.addEventListener('click', (event) => { if (event.target.closest('a')) closeNav(); });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && nav.classList.contains('nav-open')) {
+      closeNav();
+      navToggle.focus();
+    }
   });
 };
+
 lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
 lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
-document.querySelectorAll('.language-option').forEach(button => button.addEventListener('click', () => { render(button.dataset.language); window.scrollTo({ top: 0, behavior: 'smooth' }); }));
+document.querySelectorAll('.language-option').forEach((button) => button.addEventListener('click', () => {
+  closeNav();
+  render(button.dataset.language);
+  storeLanguage(button.dataset.language);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}));
 
 const progress = document.querySelector('.reading-progress span');
-const updateProgress = () => { const height = document.documentElement.scrollHeight - window.innerHeight; progress.style.width = `${height ? (window.scrollY / height) * 100 : 0}%`; };
+const updateProgress = () => {
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.width = `${height ? (window.scrollY / height) * 100 : 0}%`;
+};
 window.addEventListener('scroll', updateProgress, { passive: true });
-render('en');
+
+initMobileNav();
+init();
 updateProgress();

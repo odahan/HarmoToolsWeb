@@ -7,7 +7,7 @@ const screenshots = [
 ];
 
 const STORAGE_KEY = 'od-harmotools-language';
-const DOWNLOAD_URL = 'https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0';
+const DOWNLOAD_URL = 'https://github.com/odahan/HarmoTools.Release/releases';
 const BMC_CDN = 'https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js';
 const BMC_INTEGRITY = 'sha384-hPKwNGJlXU41YiK3xwGvKODwz62yCVUnp9xIZl8K0FueN6vB44otT6/VqhPoWMks';
 const BMC_PROFILE = 'knhsynths';

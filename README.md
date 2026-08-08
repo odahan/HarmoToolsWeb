@@ -7,9 +7,9 @@ FR: Cependant, ce contenu est protégé par le droit d'auteur et ne peut être u
 
 ## Téléchargement
 
-Lien de téléchargement actuel (dossier Dropbox partagé contenant les dernières versions publiées) — provisoire, remplacé ultérieurement par un lien vers les releases GitHub :
+Lien de téléchargement actuel (releases GitHub) :
 
-https://www.dropbox.com/scl/fo/iadlivo97x9hukvjzwpe2/AFfq22me4XuTWIwW6AVAho8?rlkey=fbebfs3q4hlbw9xr5cmm4q097&dl=0
+https://github.com/odahan/HarmoTools.Release/releases
 
 ## Bouton de don
 

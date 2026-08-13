@@ -1,0 +1,31 @@
+# OD HarmoTools
+
+> A practical workspace for exploring musical harmony: scales, chords, keys, circle of fifths, random and chord sequencers, and MIDI export. DonationWare — the full version is available for unrestricted use.
+
+## Introduction
+
+OD HarmoTools is a music software landing page and downloadable application by Olivier Dahan. The workspace makes scales, chords and keys immediately playable, visible and connected. The full version supports audio playback, keyboard and MIDI input, and exports chord progressions and sequences as Standard MIDI Files (format 0) for use in a DAW.
+
+## Key features
+
+- [Scales & chords](https://www.e-naxos.com/HarmoTools/): choose a root and a mode to see notes, diatonic chords and keyboard voicings
+- [Scale finder](https://www.e-naxos.com/HarmoTools/): select notes and let the app reveal candidate scales
+- [Chord name & chord finder](https://www.e-naxos.com/HarmoTools/): enter or play a chord to inspect its notes, inversions and spellings
+- [Circle of fifths](https://www.e-naxos.com/HarmoTools/): key signatures, relative minors and chord-progression building
+- [Frequencies & ranges](https://www.e-naxos.com/HarmoTools/): exact note frequencies and instrumental tessituras
+- [Random & chord sequencers](https://www.e-naxos.com/HarmoTools/): 4–64 step patterns, up to six saved sequences, MIDI export
+- [Audio settings, MIDI & diagnostics](https://www.e-naxos.com/HarmoTools/): SoundFont, audio output, MIDI input
+- [Built-in guide](https://www.e-naxos.com/HarmoTools/): user manual shipped with the application
+
+## Scale library
+
+52 public scale definitions, including 48 recognition candidates: major, harmonic and melodic minor modes, pentatonic, whole tone, octatonic, augmented, blues, bebop, harmonic major, Hungarian minor, Neapolitan, Persian, Arabic, Japanese (Hirajoshi, Insen, Iwato, Yo, Kumoi) and more.
+
+## Download & support
+
+- [Download the full version](https://github.com/odahan/HarmoTools.Release/releases): DonationWare, full version, not a demo
+- [Buy me a coffee](https://www.buymeacoffee.com/knhsynths): support ongoing development
+
+## License
+
+© Olivier Dahan. This content is protected by copyright and may not be used, modified or reproduced without the author's permission.

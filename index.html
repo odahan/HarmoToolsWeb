@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OD HarmoTools — a practical workspace for exploring musical harmony. Scales, chords, keys, circle of fifths, sequencers and MIDI export.">
+  <meta name="description" content="OD HarmoTools — scales, chords, MIDI sequencers, pitch CV, reference tones, audio and spectrum analysis, and a digital metronome.">
   <meta name="theme-color" content="#0d1311">
   <meta name="author" content="Olivier Dahan">
   <link rel="canonical" href="https://www.e-naxos.com/HarmoTools/">
@@ -12,14 +12,14 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OD HarmoTools">
   <meta property="og:title" content="OD HarmoTools — Harmony in motion">
-  <meta property="og:description" content="A practical workspace for exploring musical harmony. Scales, chords, keys, sequencers and MIDI export — DonationWare, full version.">
+  <meta property="og:description" content="OD HarmoTools — scales, chords, MIDI sequencers, pitch CV, reference tones, audio and spectrum analysis, and a digital metronome.">
   <meta property="og:url" content="https://www.e-naxos.com/HarmoTools/">
   <meta property="og:image" content="https://www.e-naxos.com/HarmoTools/ScreenShots/01-ScalesAndChords.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OD HarmoTools — Harmony in motion">
-  <meta name="twitter:description" content="A practical workspace for exploring musical harmony. Scales, chords, keys, sequencers and MIDI export.">
+  <meta name="twitter:description" content="OD HarmoTools — scales, chords, MIDI sequencers, pitch CV, reference tones, audio and spectrum analysis, and a digital metronome.">
   <meta name="twitter:image" content="https://www.e-naxos.com/HarmoTools/ScreenShots/01-ScalesAndChords.png">
   <title>OD HarmoTools — Harmony in motion</title>
   <script>document.documentElement.classList.add('js');</script>
@@ -33,7 +33,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "OD HarmoTools",
-    "description": "A practical workspace for exploring musical harmony: scales, chords, keys, circle of fifths, sequencers and MIDI export.",
+    "description": "OD HarmoTools — scales, chords, MIDI sequencers, pitch CV, reference tones, audio and spectrum analysis, and a digital metronome.",
     "applicationCategory": "MultimediaApplication",
     "url": "https://www.e-naxos.com/HarmoTools/",
     "image": "https://www.e-naxos.com/HarmoTools/ScreenShots/01-ScalesAndChords.png",
@@ -88,7 +88,7 @@
     </section>
     <section class="tools" id="tools">
       <div class="section-shell section-intro reveal">
-        <p class="eyebrow">Fourteen gestures, one musical thread</p>
+        <p class="eyebrow">Harmony, tuning and rhythm in one workspace</p>
         <h2>Explore. Understand.<br><em>Make it sound.</em></h2>
       </div>
       <article class="feature section-shell reveal">
@@ -164,15 +164,33 @@
       </article>
       <article class="feature feature-reverse section-shell reveal">
         <div class="feature-number">06</div>
-        <button class="screenshot image-frame" data-image="ScreenShots/07-Frequencies-Compute.png" data-caption="Exact frequencies for every note." aria-label="Exact frequencies for every note."><span class="screenshot-crop"><img src="ScreenShots/07-Frequencies-Compute.png" alt="Note frequency calculator" loading="lazy" decoding="async"></span></button>
+        <button class="screenshot image-frame" data-image="ScreenShots/07-Frequencies-Compute.png" data-caption="Set the pitch CV standard and C4 reference voltage." aria-label="Set the pitch CV standard and C4 reference voltage."><span class="screenshot-crop"><img src="ScreenShots/07-Frequencies-Compute.png" alt="Pitch CV settings with the V/Oct standard, C4 voltage and A4 frequency reference" loading="lazy" decoding="async"></span></button>
         <div class="feature-content">
-          <p class="eyebrow">Frequencies</p>
-          <h3>Every note has its precision.</h3>
-          <p>Connect note name, octave and frequency instantly. A dependable reference for synthesis, tuning and the details that matter.</p>
+          <p class="eyebrow">Pitch CV settings</p>
+          <h3>Match the voltage to your synth.</h3>
+          <p>Choose the Hz/V or V/Oct pitch CV standard, set the voltage assigned to C4 and adjust the A4 tuning reference. The conversions then follow your synthesizer’s pitch settings.</p>
         </div>
       </article>
       <article class="feature section-shell reveal">
         <div class="feature-number">07</div>
+        <div class="feature-content">
+          <p class="eyebrow">Frequencies &amp; volts</p>
+          <h3>Move between notes, hertz and volts.</h3>
+          <p>Convert a note into its frequency and pitch control voltage, or find the nearest note from a frequency or voltage. Read the tuning offset in hertz and cents using your chosen CV settings.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/07-Frequencies-Compute2.png" data-caption="Convert notes, frequencies and pitch voltages with your chosen reference." aria-label="Convert notes, frequencies and pitch voltages with your chosen reference."><span class="screenshot-crop"><img src="ScreenShots/07-Frequencies-Compute2.png" alt="Note, frequency and voltage conversions with nearest note and tuning offsets" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">08</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/07-Tone Generator.png" data-caption="Play a reference tone to tune a synthesizer or VCO." aria-label="Play a reference tone to tune a synthesizer or VCO."><span class="screenshot-crop"><img src="ScreenShots/07-Tone Generator.png" alt="Reference tone generator with note selection, waveform, playback and volume controls" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Reference tone</p>
+          <h3>Give your synth a tuning reference.</h3>
+          <p>Play a reference tone from the selected or nearest note to tune a synthesizer or VCO by ear. Choose the waveform and volume, then apply a new target when you are ready to change the reference pitch.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">09</div>
         <div class="feature-content">
           <p class="eyebrow">Ranges</p>
           <h3>Put your ideas in the right register.</h3>
@@ -181,43 +199,70 @@
         <button class="screenshot image-frame" data-image="ScreenShots/08-Frequencies-Ranges.png" data-caption="Visualise instrumental ranges." aria-label="Visualise instrumental ranges."><span class="screenshot-crop"><img src="ScreenShots/08-Frequencies-Ranges.png" alt="Instrument ranges and frequency bands" loading="lazy" decoding="async"></span></button>
       </article>
       <article class="feature feature-reverse section-shell reveal">
-        <div class="feature-number">08</div>
-        <button class="screenshot image-frame" data-image="ScreenShots/09-HomeFavoriteScales.png" data-caption="Keep favourite tonal colours within reach." aria-label="Keep favourite tonal colours within reach."><span class="screenshot-crop"><img src="ScreenShots/09-HomeFavoriteScales.png" alt="Home page with favourite scales" loading="lazy" decoding="async"></span></button>
+        <div class="feature-number">10</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/09-HomeFavoriteScales.png" data-caption="Keep favourite tonal colours within reach." aria-label="Keep favourite tonal colours within reach."><span class="screenshot-crop"><img src="ScreenShots/09-HomeFavoriteScales.png" alt="Memories page with favourite scales" loading="lazy" decoding="async"></span></button>
         <div class="feature-content">
-          <p class="eyebrow">Your favourites</p>
+          <p class="eyebrow">Memories · Favourite scales</p>
           <h3>Your scales, ready whenever you are.</h3>
           <p>Keep the worlds that inspire you and return to them in one move. Your workspace organises itself around your own tonal palette.</p>
         </div>
       </article>
       <article class="feature section-shell reveal">
-        <div class="feature-number">09</div>
+        <div class="feature-number">11</div>
+        <div class="feature-content">
+          <p class="eyebrow">MIDI export</p>
+          <h3>Bring your progressions and sequences into your DAW.</h3>
+          <p>Export chord progressions and Random Sequencer patterns as Standard MIDI Files (format 0), then simply drag and drop them into your DAW to continue developing your ideas there.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10B-ChordImportAbleton.png" data-caption="Drag and drop exported progressions or sequences into your DAW." aria-label="Drag and drop exported progressions or sequences into your DAW."><span class="screenshot-crop"><img src="ScreenShots/10B-ChordImportAbleton.png" alt="MIDI material exported from OD HarmoTools and imported into a DAW" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">12</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10C-RandomSequencer.png" data-caption="Generate, save and export a random MIDI sequence." aria-label="Generate, save and export a random MIDI sequence."><span class="screenshot-crop"><img src="ScreenShots/10C-RandomSequencer.png" alt="Dedicated Random Sequencer page with adjustable patterns" loading="lazy" decoding="async"></span></button>
         <div class="feature-content">
           <p class="eyebrow">Random sequencer</p>
           <h3>Let chance write the first draft.</h3>
           <p>Create evolving patterns from 4 to 64 steps. Use any scale or a custom selection of notes entered with the mouse or a MIDI keyboard, store up to six sequences, then export them as MIDI files for your DAW.</p>
         </div>
-        <button class="screenshot image-frame" data-image="ScreenShots/10C-RandomSequencer.png" data-caption="Generate, save and export a random MIDI sequence." aria-label="Generate, save and export a random MIDI sequence."><span class="screenshot-crop"><img src="ScreenShots/10C-RandomSequencer.png" alt="Adjustable random sequencer on the home page" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">13</div>
+        <div class="feature-content">
+          <p class="eyebrow">Digital metronome</p>
+          <h3>Keep a steady pulse.</h3>
+          <p>Set the tempo in BPM or use Tap Tempo, follow the visual pulse and choose the beat accent, sound and volume. A reference for practising, rehearsing or checking a rhythmic idea.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10-D Metronome.png" data-caption="Practise with a visual and audible pulse at your chosen tempo." aria-label="Practise with a visual and audible pulse at your chosen tempo."><span class="screenshot-crop"><img src="ScreenShots/10-D Metronome.png" alt="Digital metronome with visual pulse, BPM, Tap Tempo, accent and sound controls" loading="lazy" decoding="async"></span></button>
       </article>
       <article class="feature feature-reverse section-shell reveal">
-        <div class="feature-number">10</div>
-        <button class="screenshot image-frame" data-image="ScreenShots/10-HomeChordSequencer.png" data-caption="Play and shape a chord progression." aria-label="Play and shape a chord progression."><span class="screenshot-crop"><img src="ScreenShots/10-HomeChordSequencer.png" alt="Chord sequencer on the home page" loading="lazy" decoding="async"></span></button>
+        <div class="feature-number">14</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/14-Audio Analysis 01.png" data-caption="Identify a played note and check its tuning from a microphone or ASIO input." aria-label="Identify a played note and check its tuning from a microphone or ASIO input."><span class="screenshot-crop"><img src="ScreenShots/14-Audio Analysis 01.png" alt="Audio analyzer showing the input device, measured frequency, detected note and tuning offset in cents" loading="lazy" decoding="async"></span></button>
+        <div class="feature-content">
+          <p class="eyebrow">Audio analyzer · Pitch detection</p>
+          <h3>See the note you are playing.</h3>
+          <p>Analyze one note at a time from a microphone, USB microphone or ASIO audio interface. Read its measured frequency, note name and tuning offset in cents from the nearest in-tune note, using an adjustable A4 reference.</p>
+        </div>
+      </article>
+      <article class="feature section-shell reveal">
+        <div class="feature-number">15</div>
+        <div class="feature-content">
+          <p class="eyebrow">Audio analyzer · Spectrum</p>
+          <h3>Find the fundamental in your sound.</h3>
+          <p>Inspect the frequency spectrum in Hz and dBFS, with the detected fundamental marked on the graph. See the harmonics and freeze the spectrum to examine a stable measurement.</p>
+        </div>
+        <button class="screenshot image-frame" data-image="ScreenShots/14-Audio Analysis 02.png" data-caption="Inspect the spectrum and locate the detected fundamental frequency." aria-label="Inspect the spectrum and locate the detected fundamental frequency."><span class="screenshot-crop"><img src="ScreenShots/14-Audio Analysis 02.png" alt="Audio spectrum in Hz and dBFS with a marked fundamental frequency and harmonic peaks" loading="lazy" decoding="async"></span></button>
+      </article>
+      <article class="feature feature-reverse section-shell reveal">
+        <div class="feature-number">16</div>
+        <button class="screenshot image-frame" data-image="ScreenShots/10-HomeChordSequencer.png" data-caption="Play and shape a chord progression." aria-label="Play and shape a chord progression."><span class="screenshot-crop"><img src="ScreenShots/10-HomeChordSequencer.png" alt="Chord sequencer in Memories" loading="lazy" decoding="async"></span></button>
         <div class="feature-content">
           <p class="eyebrow">Chord sequencer</p>
           <h3>Let the progression move.</h3>
           <p>Save your chords, set tempo, gate, strum and instrument. Then hear the progression breathe before taking it further.</p>
         </div>
       </article>
-      <article class="feature feature-followup section-shell feature-reverse reveal">
-        <div class="feature-number">MIDI</div>
-        <button class="screenshot image-frame" data-image="ScreenShots/10B-ChordImportAbleton.png" data-caption="Drag and drop exported progressions or sequences into your DAW." aria-label="Drag and drop exported progressions or sequences into your DAW."><span class="screenshot-crop"><img src="ScreenShots/10B-ChordImportAbleton.png" alt="MIDI material exported from OD HarmoTools and imported into a DAW" loading="lazy" decoding="async"></span></button>
-        <div class="feature-content">
-          <p class="eyebrow">MIDI export</p>
-          <h3>Bring your progressions and sequences into your DAW.</h3>
-          <p>Export chord progressions and Random Sequencer patterns as Standard MIDI Files (format 0), then simply drag and drop them into your DAW to continue developing your ideas there.</p>
-        </div>
-      </article>
       <article class="feature section-shell reveal">
-        <div class="feature-number">11</div>
+        <div class="feature-number">17</div>
         <div class="feature-content">
           <p class="eyebrow">Audio settings</p>
           <h3>A workspace that listens to you.</h3>
@@ -226,7 +271,7 @@
         <button class="screenshot image-frame" data-image="ScreenShots/11-Settings1.png" data-caption="Personalise your sound and workspace." aria-label="Personalise your sound and workspace."><span class="screenshot-crop"><img src="ScreenShots/11-Settings1.png" alt="Audio and appearance settings" loading="lazy" decoding="async"></span></button>
       </article>
       <article class="feature feature-reverse section-shell reveal">
-        <div class="feature-number">12</div>
+        <div class="feature-number">18</div>
         <button class="screenshot image-frame" data-image="ScreenShots/12-Settings2.png" data-caption="Connect MIDI input and keep control." aria-label="Connect MIDI input and keep control."><span class="screenshot-crop"><img src="ScreenShots/12-Settings2.png" alt="MIDI and diagnostic settings" loading="lazy" decoding="async"></span></button>
         <div class="feature-content">
           <p class="eyebrow">MIDI &amp; diagnostics</p>
@@ -235,9 +280,9 @@
         </div>
       </article>
       <article class="feature section-shell reveal">
-        <div class="feature-number">13</div>
+        <div class="feature-number">19</div>
         <div class="feature-content">
-          <p class="eyebrow">Built-in guide</p>
+          <p class="eyebrow">About &amp; help</p>
           <h3>Move forward with the right answers.</h3>
           <p>The manual travels with the application, so every feature stays approachable — from the first scale to your next progression.</p>
         </div>

@@ -1,6 +1,6 @@
 # OD HarmoTools
 
-> A practical workspace for exploring musical harmony: scales, chords, keys, circle of fifths, random and chord sequencers, and MIDI export. DonationWare — the full version is available for unrestricted use.
+> A practical workspace for exploring musical harmony: scales, chords, keys, circle of fifths, random and chord sequencers, MIDI export, pitch CV conversions, a reference tone generator, a digital metronome, and audio and spectrum analysis. DonationWare — the full version is available for unrestricted use.
 
 ## Introduction
 
@@ -12,8 +12,14 @@ OD HarmoTools is a music software landing page and downloadable application by O
 - [Scale finder](https://www.e-naxos.com/HarmoTools/): select notes and let the app reveal candidate scales
 - [Chord name & chord finder](https://www.e-naxos.com/HarmoTools/): enter or play a chord to inspect its notes, inversions and spellings
 - [Circle of fifths](https://www.e-naxos.com/HarmoTools/): key signatures, relative minors and chord-progression building
-- [Frequencies & ranges](https://www.e-naxos.com/HarmoTools/): exact note frequencies and instrumental tessituras
+- [Frequencies & volts](https://www.e-naxos.com/HarmoTools/): convert notes, frequencies and pitch control voltages with Hz/V or V/Oct settings, adjustable C4 voltage and A4 tuning reference
+- [Reference tone](https://www.e-naxos.com/HarmoTools/): waveform and volume controls for tuning a synthesizer or VCO by ear
+- [Instrument ranges](https://www.e-naxos.com/HarmoTools/): frequency ranges and instrumental tessituras
+- [Digital metronome](https://www.e-naxos.com/HarmoTools/): BPM and Tap Tempo, visual pulse, beat accents, sound and volume
+- [Memories](https://www.e-naxos.com/HarmoTools/): favourite scales and saved chord progressions
 - [Random & chord sequencers](https://www.e-naxos.com/HarmoTools/): 4–64 step patterns, up to six saved sequences, MIDI export
+- [Audio analyzer · Pitch detection](https://www.e-naxos.com/HarmoTools/): analyze one note at a time from a microphone, USB microphone or ASIO audio interface; display the measured frequency, note name and tuning offset in cents from the nearest in-tune note using an adjustable A4 reference
+- [Audio analyzer · Spectrum](https://www.e-naxos.com/HarmoTools/): view the spectrum in Hz and dBFS, identify the detected fundamental and harmonic peaks, and freeze a stable measurement
 - [Audio settings, MIDI & diagnostics](https://www.e-naxos.com/HarmoTools/): SoundFont, audio output, MIDI input
 - [Built-in guide](https://www.e-naxos.com/HarmoTools/): user manual shipped with the application
 

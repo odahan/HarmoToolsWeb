@@ -58,6 +58,8 @@ h1 em,h2 em { color:var(--teal); font-style:italic; }
 .image-frame::after { position:absolute; z-index:-1; right:10%; bottom:-20px; left:10%; height:28px; content:""; border-radius:50%; background:radial-gradient(ellipse, rgba(0,0,0,.58), rgba(9,18,16,.26) 42%, transparent 72%); filter:blur(10px); opacity:.72; transition:opacity .28s ease, transform .28s ease; }
 .screenshot-crop { position:relative; z-index:1; display:block; aspect-ratio:1.29; overflow:hidden; border:1px solid rgba(255,255,255,.07); border-radius:9px; box-shadow:0 9px 20px rgba(0,0,0,.2); }
 .screenshot-crop > img { display:block; width:122%; max-width:none; height:auto; margin-left:-22%; }
+.screenshot-full .screenshot-crop { aspect-ratio:auto; }
+.screenshot-full .screenshot-crop > img { width:100%; margin-left:0; }
 .screenshot:hover::after { opacity:.92; transform:scaleX(1.04); }
 .screenshot:focus-visible { outline:2px solid var(--teal); outline-offset:6px; }
 .screenshot.image-frame { padding:6px; }

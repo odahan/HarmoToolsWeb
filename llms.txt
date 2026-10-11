@@ -4,7 +4,7 @@
 
 ## Introduction
 
-OD HarmoTools is a music software landing page and downloadable application by Olivier Dahan. The workspace makes scales, chords and keys immediately playable, visible and connected. The full version supports audio playback, keyboard and MIDI input, and exports chord progressions and sequences as Standard MIDI Files (format 0) for use in a DAW.
+OD HarmoTools is a music software landing page and downloadable application by Olivier Dahan. The workspace makes scales, chords and keys immediately playable, visible and connected. The full version supports audio playback, keyboard and MIDI input, and exports chord progressions and sequences as Standard MIDI Files (format 0) for use in a DAW. Memories and sequences can also be dragged directly into Bitwig or Ableton Live without going through a temporary MIDI file on disk.
 
 ## Key features
 
@@ -18,6 +18,7 @@ OD HarmoTools is a music software landing page and downloadable application by O
 - [Digital metronome](https://www.e-naxos.com/HarmoTools/): BPM and Tap Tempo, visual pulse, beat accents, sound and volume
 - [Memories](https://www.e-naxos.com/HarmoTools/): favourite scales and saved chord progressions
 - [Random & chord sequencers](https://www.e-naxos.com/HarmoTools/): 4–64 step patterns, up to six saved sequences, MIDI export
+- [Direct MIDI drag and drop](https://www.e-naxos.com/HarmoTools/): transfer memories and sequences directly into Bitwig or Ableton Live without a temporary MIDI file on disk
 - [Audio analyzer · Pitch detection](https://www.e-naxos.com/HarmoTools/): analyze one note at a time from a microphone, USB microphone or ASIO audio interface; display the measured frequency, note name and tuning offset in cents from the nearest in-tune note using an adjustable A4 reference
 - [Audio analyzer · Spectrum](https://www.e-naxos.com/HarmoTools/): view the spectrum in Hz and dBFS, identify the detected fundamental and harmonic peaks, and freeze a stable measurement
 - [Audio settings, MIDI & diagnostics](https://www.e-naxos.com/HarmoTools/): SoundFont, audio output, MIDI input
